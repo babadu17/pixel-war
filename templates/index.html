@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Pixel War</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pixel War</h1>
+
+    <div class="controls">
+      <label>Couleur: <input id="color" type="color" value="#ff0000"></label>
+      <label>Taille:
+        <select id="pixelSize">
+          <option value="4">4</option>
+          <option value="6" selected>6</option>
+          <option value="8">8</option>
+        </select>
+      </label>
+      <span id="status">connecté</span>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="board"></canvas>
+  </main>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="/static/main.js"></script>
+</body>
+</html>
